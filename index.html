@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenken Store</title>
+    <style>
+        /* Previous CSS remains the same */
+        /* ... */
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px; /* Smaller font size */
+        }
+    </style>
+</head>
+<body>
+    <!-- All previous content remains the same -->
+    <!-- ... -->
+
+    <footer>
+        <p>INI ADALAH MENU STORE ZENKEN STORE</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Sembunyikan semua section
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Tampilkan section yang dipilih
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
